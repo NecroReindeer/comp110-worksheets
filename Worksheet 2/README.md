@@ -2,7 +2,7 @@
 
 ##Pseudocode
 
-###Changing colours that are above a certain threshold of red/green/blue to completely red/green/blue and everything else to black
+###Changing colours that are above a certain threshold that are mostly red/green/blue to completely red/green/blue and change everything else to black
 
 ```
 Main:
