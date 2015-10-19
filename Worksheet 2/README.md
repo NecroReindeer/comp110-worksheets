@@ -1,5 +1,8 @@
 #Worksheet 2
 
+##Flowcharts
+Flowcharts will be here... soon...
+
 ##Pseudocode
 
 ###Changing colours that are above a certain threshold that are mostly red/green/blue to completely red/green/blue and change everything else to black
