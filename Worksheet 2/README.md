@@ -15,42 +15,36 @@ DO Change blues to blue
 DO Change rest to black
 
 Change reds to red:
-index = 0
-WHILE index < number of pixels
+FOR each pixel in image
   Get the RGB values of pixel at current index  
   IF red value > minimumThreshold AND green value < 0.9 * red value	AND blue value < 0.9 * red value  
     set colour of pixel at current index to red 255/0/0
   ENDIF
-  Add 1 to index 
-ENDWHILE
+ENDFOR
 
 Change greens to green:
-index = 0
-WHILE index < number of pixels    
+FOR each pixel in image   
   Get the RGB values of pixel at current index 
   IF green value > minimumThreshold AND red value < 0.9 * green value	AND blue value < 0.9 * green value  
     set colour of pixel at current index to green 0/255/0  
   ENDIF
   Add 1 to index
-ENDWHILE
+ENDFOR
 
 Change blues to blue:
-index = 0
-WHILE index < number of pixels    
+FOR each pixel in image
   Get the RGB values of pixel at current index  
   IF blue value > minThreshold AND red value < 0.9 * blue value	AND green value < 0.9 * blue value  
     set colour of pixel at current index to blue 0/0/255
   ENDIF
-  Add 1 to index
-ENDWHILE
+ENDFOR
 
 Change rest to black:
-index = 0
-WHILE index < number of pixels    
+FOR each pixel in image   
   Get the RGB values of pixel at current index  
   IF colour is NOT (red OR green OR blue)  
     set colour of pixel at current index to black 0/0/0
   ENDIF
   Add 1 to index
-ENDWHILE
+ENDFOR
 ```			
