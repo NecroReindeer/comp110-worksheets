@@ -1,11 +1,13 @@
 #Worksheet 2 (draft)
 
 ##Flowcharts
-Flowcharts will be here... soon...
+###Flowchart for randomly shuffling pixels in an image
+
+![Flowchart for randomly shuffling pixels in an image](http://i57.tinypic.com/35cinv5.png)
 
 ##Pseudocode
 
-###Changing colours that are above a certain threshold that are mostly red/green/blue to completely red/green/blue and change everything else to black
+###Pseudocode for changing colours that are above a certain threshold and mostly red, green or blue to completely red, green or blue respectively, then change everything else to black
 
 ```
 Main:
@@ -50,7 +52,7 @@ FOR each pixel in image
 ENDFOR
 ```			
 
-###Randomly shuffle pixels in an image
+###Pseudocode for randomly shuffling pixels in an image
 
 ```
 Get a startingImage
