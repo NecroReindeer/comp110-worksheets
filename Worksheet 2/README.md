@@ -59,7 +59,7 @@ Add pixels in original image to an array
 Add pixels in copyOfImage to an array
 Create a list of integers containing all index numbers of pixel array
 
-FOR each pixel in image
+FOR each pixel in startingImage
   Get the colour of the current pixel in startingImage
   Pick a randomNumber from the list of numbers
   Change pixel at index randomNumber in copyOfImage to the colour of pixel chosen from startingImage 
