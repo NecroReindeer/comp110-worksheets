@@ -10,46 +10,33 @@
 ###Pseudocode for changing colours that are above a certain threshold and mostly red, green or blue to completely red, green or blue respectively, then change everything else to black
 
 ```
-Main:
 Get an image
 Add pixels in image to an array  
-READ minimumThreshold for colour to be changed 
-DO Change reds to red  
-DO Change greens to green  
-DO Change blues to blue  
-DO Change rest to black
+READ minimumThreshold for colour to be allowed to changed 
+DO FUNCTION changeColor(minThreshold, red)
+DO FUNCTION changeColor(minThreshold, green)
+DO FUNCTION changeColor(minThreshold, blue)
+DO FUNCTION changeRestToBlack
 
-Change reds to red:
-FOR each pixel in image
-  Get the RGB values of current pixel  
-  IF red value > minimumThreshold AND green value < 0.9 * red value	AND blue value < 0.9 * red value  
-    set colour of current pixel to red 255/0/0
-  ENDIF
-ENDFOR
 
-Change greens to green:
-FOR each pixel in image   
-  Get the RGB values of pixel at current index 
-  IF green value > minimumThreshold AND red value < 0.9 * green value	AND blue value < 0.9 * green value  
-    set colour of current pixel to green 0/255/0  
-  ENDIF
-ENDFOR
+FUNCTION changeColor(minThreshold, chosenColourComponent):
+  FOR each pixel in image
+    Get the RGB component values of current pixel
+    IF chosenColourComponent > minimumThreshold AND each of other two colours < 0.9 * chosenColourComponent
+      set the chosenColourComponent of the current pixel to 255
+      set the other two colour components of the current pixel to 0
+    ENDIF
+  ENDFOR
+END FUNCTION
 
-Change blues to blue:
-FOR each pixel in image
-  Get the RGB values of current pixel  
-  IF blue value > minThreshold AND red value < 0.9 * blue value	AND green value < 0.9 * blue value  
-    set colour of current pixel to blue 0/0/255
-  ENDIF
-ENDFOR
-
-Change rest to black:
-FOR each pixel in image   
-  Get the RGB values of current pixel
-  IF colour is NOT (red OR green OR blue)  
-    set colour of current pixel to black 0/0/0
-  ENDIF
-ENDFOR
+FUNCTION changeRestToBlack:
+  FOR each pixel in image   
+    Get the colour of the current pixel
+    IF colour of current pixel is NOT (red OR green OR blue)  
+      set colour of current pixel to black 0/0/0
+    ENDIF
+  ENDFOR
+END FUNCTION
 ```			
 
 ###Pseudocode for randomly shuffling pixels in an image
