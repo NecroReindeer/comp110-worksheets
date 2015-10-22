@@ -5,6 +5,9 @@
 
 ![Flowchart for randomly shuffling pixels in an image](http://i57.tinypic.com/35cinv5.png)
 
+###Flowchart for changing colours that are above a certain threshold and mostly red, green or blue to completely red, green or blue respectively, then change everything else to black
+![Flowchart for changing image to red, green, blue and black](http://i57.tinypic.com/2zisklh.png)
+
 ##Pseudocode
 
 ###Pseudocode for changing colours that are above a certain threshold and mostly red, green or blue to completely red, green or blue respectively, then change everything else to black
