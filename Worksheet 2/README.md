@@ -1,4 +1,4 @@
-#Worksheet 2 (draft)
+#Worksheet 2
 
 ##Flowcharts
 ###Flowchart for randomly shuffling pixels in an image
