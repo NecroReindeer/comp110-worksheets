@@ -30,7 +30,7 @@ FUNCTION generateMaze(activeCells)
       create a cell in randomDirection
       set the edge between the created cell and currentCell to a passage
       add the created cell to activeCells
-    ELSE IF
+    ELSE
       set the edge between the created cell and currentCell to a wall
     ENDIF
   ELSE
