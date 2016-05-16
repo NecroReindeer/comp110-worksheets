@@ -23,18 +23,18 @@ FUNCTION generateMaze(activeCells)
   ENDIF
   
   get a randomDirection where the corresponding edge of currentCell isn't initialised
-
-IF moving in randomDirection from currentCell is still inside the level
-  IF no cell exists in randomDirection
-    create a cell in randomDirection
-    set the edge between the created cell and currentCell to a passage
-    add the created cell to activeCells
-  ELSE IF
-    set the edge between the created cell and currentCell to a wall
+  
+  IF moving in randomDirection from currentCell is still inside the level
+    IF no cell exists in randomDirection
+      create a cell in randomDirection
+      set the edge between the created cell and currentCell to a passage
+      add the created cell to activeCells
+    ELSE IF
+      set the edge between the created cell and currentCell to a wall
+    ENDIF
+  ELSE
+    set the edge of currentCell in the randomDirection to a wall
   ENDIF
-ELSE
-  set the edge of currentCell in the randomDirection to a wall
-ENDIF
 
 END FUNCTION
 ```
