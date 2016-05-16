@@ -19,6 +19,7 @@ END FUNCTION
 FUNCTION generateMaze(activeCells)
   currentCell = last cell added to activeCells
   IF all edges of currentCell are initialised
+    remove currentCell from activeCells
     return
   ENDIF
   
