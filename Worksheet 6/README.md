@@ -1,8 +1,9 @@
 # Worksheet 6
 
-##Flowchart
+##Flowchart for NPC Placement
+![NPC Placement Flowchart](https://github.com/NecroReindeer/comp110-worksheets/blob/master/Worksheet%206/NPC%20placement%20flow%20chart.png)
 
-##Pseudocode
+##Pseudocode for Maze Generation
 ```
 FUNTION generateLevel()
   Create a list of activeCells
@@ -14,7 +15,6 @@ FUNTION generateLevel()
     DO FUNCTION generateMaze(activeCells)
   ENDWHILE
 END FUNCTION
-
 
 FUNCTION generateMaze(activeCells)
   currentCell = last cell added to activeCells
@@ -42,3 +42,11 @@ END FUNCTION
 
 
 ##UML Diagrams
+
+###Use Case Diagram
+
+###Class Diagram
+
+###State Diagram
+
+###Sequence Diagram
